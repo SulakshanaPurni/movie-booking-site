@@ -49,7 +49,6 @@ main h1 {
   border: 1px solid #ccc;
 }
 
-/* === Buttons Row === */
 .btn-row {
   display: flex;
   flex-wrap: wrap;
@@ -73,7 +72,6 @@ main h1 {
   background-color: #0c0004;
 }
 
-/* === Summary Table === */
 
 .sum {
   margin-left: 20px;
