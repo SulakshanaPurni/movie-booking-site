@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Tickets - Galaxy Cinema</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/booktickets.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="booking.html" class="active">Book Tickets</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Book Your Tickets</h1>
+    <form id="bookingForm">
+
+    <h2 class="category">Now Showing</h2>
+
+    <div class="movie-block">
+      <h2>MOANA 2</h2>
+      <p><strong>Available at:</strong> Hall 2 (10:00 AM), Hall 4 (1:30 PM), Hall 6 (5:00 PM)</p>
+      <label>Adult Tickets (Rs. 1590): <input type="number" min="0" value="0" name="Moana 2_Adult" data-price="1590" /></label>
+      <label>Kids Tickets (Rs. 700): <input type="number" min="0" value="0" name="Moana 2_Kids" data-price="700" /></label>
+    </div>
+
+    <div class="movie-block">
+      <h2>Nelum Kuluna</h2>
+      <p><strong>Available at:</strong> Hall 1 (2:00 PM), Hall 3 (5:30 PM), Hall 5 (8:30 PM)</p>
+      <label>Adult Tickets (Rs. 1800): <input type="number" min="0" value="0" name="Oppenheimer_Adult" data-price="1800" /></label>
+      <label>Kids Tickets (Rs. 900): <input type="number" min="0" value="0" name="Oppenheimer_Kids" data-price="900" /></label>
+    </div>
+
+    <div class="movie-block">
+      <h2>The Amature</h2>
+      <p><strong>Available at:</strong> Hall 2 (12:00 PM), Hall 4 (3:00 PM), Hall 6 (6:00 PM)</p>
+      <label>Adult Tickets (Rs. 1750): <input type="number" min="0" value="0" name="John Wick 4_Adult" data-price="1750" /></label>
+      <label>Kids Tickets (Rs. 850): <input type="number" min="0" value="0" name="John Wick 4_Kids" data-price="850" /></label>
+    </div>
+
+    <div class="movie-block">
+      <h2>Guardians of the Galaxy Vol. 3</h2>
+      <p><strong>Available at:</strong> Hall 1 (11:00 AM), Hall 3 (2:30 PM), Hall 5 (5:30 PM)</p>
+      <label>Adult Tickets (Rs. 1600): <input type="number" min="0" value="0" name="Guardians 3_Adult" data-price="1600" /></label>
+      <label>Kids Tickets (Rs. 750): <input type="number" min="0" value="0" name="Guardians 3_Kids" data-price="750" /></label>
+    </div>
+
+    <div class="movie-block">
+      <h2>Jaat</h2>
+      <p><strong>Available at:</strong> Hall 2 (1:00 PM), Hall 4 (4:00 PM), Hall 6 (7:00 PM)</p>
+      <label>Adult Tickets (Rs. 1300): <input type="number" min="0" value="0" name="Mario Movie_Adult" data-price="1300" /></label>
+      <label>Kids Tickets (Rs. 650): <input type="number" min="0" value="0" name="Mario Movie_Kids" data-price="650" /></label>
+    </div>
+
+    <div class="movie-block">
+      <h2>Dune: Part Two</h2>
+      <p><strong>Available at:</strong> Hall 1 (10:30 AM), Hall 3 (1:30 PM), Hall 5 (4:30 PM)</p>
+      <label>Adult Tickets (Rs. 1700): <input type="number" min="0" value="0" name="Dune 2_Adult" data-price="1700" /></label>
+      <label>Kids Tickets (Rs. 850): <input type="number" min="0" value="0" name="Dune 2_Kids" data-price="850" /></label>
+    </div>
+
+
+    <!-- ✅ Upcoming Movies -->
+    <h2 class="category">Upcoming Movies</h2>
+
+    <div class="movie-block">
+      <h2>Thunderbolts</h2>
+      <p><strong>Available at:</strong> Hall 2 (12:00 PM), Hall 4 (3:00 PM), Hall 5 (6:00 PM)</p>
+      <label>Adult Tickets (Rs. 1250): <input type="number" min="0" value="0" name="Inside Out 2_Adult" data-price="1250" /></label>
+      <label>Kids Tickets (Rs. 650): <input type="number" min="0" value="0" name="Inside Out 2_Kids" data-price="650" /></label>
+    </div>
+
+    <div class="movie-block">
+      <h2>back in Action</h2>
+      <p><strong>Available at:</strong> Hall 3 (1:00 PM), Hall 5 (4:30 PM), Hall 6 (7:00 PM)</p>
+      <label>Adult Tickets (Rs. 1450): <input type="number" min="0" value="0" name="Deadpool 3_Adult" data-price="1450" /></label>
+      <label>Kids Tickets (Rs. 750): <input type="number" min="0" value="0" name="Deadpool 3_Kids" data-price="750" /></label>
+    </div>
+
+    <div class="movie-block">
+      <h2>Game Changer</h2>
+      <p><strong>Available at:</strong> Hall 1 (11:00 AM), Hall 3 (2:00 PM), Hall 6 (6:00 PM)</p>
+      <label>Adult Tickets (Rs. 1350): <input type="number" min="0" value="0" name="Wonka_Adult" data-price="1350" /></label>
+      <label>Kids Tickets (Rs. 700): <input type="number" min="0" value="0" name="Wonka_Kids" data-price="700" /></label>
+    </div>
+
+    <div class="movie-block">
+      <h2>Sinners</h2>
+      <p><strong>Available at:</strong> Hall 4 (3:30 PM), Hall 5 (6:00 PM), Hall 6 (9:00 PM)</p>
+      <label>Adult Tickets (Rs. 1600): <input type="number" min="0" value="0" name="MI8_Adult" data-price="1600" /></label>
+      <label>Kids Tickets (Rs. 800): <input type="number" min="0" value="0" name="MI8_Kids" data-price="800" /></label>
+    </div>
+
+    <div class="movie-block">
+      <h2>Valpampuriya</h2>
+      <p><strong>Available at:</strong> Hall 2 (2:00 PM), Hall 3 (5:00 PM), Hall 5 (8:00 PM)</p>
+      <label>Adult Tickets (Rs. 1400): <input type="number" min="0" value="0" name="The Marvels_Adult" data-price="1400" /></label>
+      <label>Kids Tickets (Rs. 700): <input type="number" min="0" value="0" name="The Marvels_Kids" data-price="700" /></label>
+    </div>
+
+    <div class="movie-block">
+      <h2>Pink Floyd</h2>
+      <p><strong>Available at:</strong> Hall 3 (12:30 PM), Hall 4 (3:30 PM), Hall 5 (6:30 PM)</p>
+      <label>Adult Tickets (Rs. 1500): <input type="number" min="0" value="0" name="Spider-Man: BTSV_Adult" data-price="1500" /></label>
+      <label>Kids Tickets (Rs. 750): <input type="number" min="0" value="0" name="Spider-Man: BTSV_Kids" data-price="750" /></label>
+    </div>
+
+
+    <!-- ✅ Premium Screenings -->
+    <h2 class="category">Premium Screenings</h2>
+
+    <div class="movie-block">
+      <h2>Avatar: The Way of Water</h2>
+      <p><strong>Available at:</strong> Hall 1 (2:00 PM), Hall 3 (6:00 PM), Hall 4 (9:00 PM)</p>
+      <label>Adult Tickets (Rs. 1800): <input type="number" min="0" value="0" name="Avatar 2_Adult" data-price="1800" /></label>
+      <label>Kids Tickets (Rs. 850): <input type="number" min="0" value="0" name="Avatar 2_Kids" data-price="850" /></label>
+    </div>
+
+    <div class="movie-block">
+      <h2>Top Gun: Maverick</h2>
+      <p><strong>Available at:</strong> Hall 2 (1:00 PM), Hall 5 (4:30 PM), Hall 6 (8:00 PM)</p>
+      <label>Adult Tickets (Rs. 1600): <input type="number" min="0" value="0" name="Top Gun Maverick_Adult" data-price="1600" /></label>
+      <label>Kids Tickets (Rs. 750): <input type="number" min="0" value="0" name="Top Gun Maverick_Kids" data-price="750" /></label>
+    </div>
+
+    <div class="movie-block">
+      <h2>Inception (Re-release)</h2>
+      <p><strong>Available at:</strong> Hall 3 (12:00 PM), Hall 4 (3:00 PM), Hall 6 (7:00 PM)</p>
+      <label>Adult Tickets (Rs. 1500): <input type="number" min="0" value="0" name="Inception Re_Adult" data-price="1500" /></label>
+      <label>Kids Tickets (Rs. 700): <input type="number" min="0" value="0" name="Inception Re_Kids" data-price="700" /></label>
+    </div>
+
+    <div class="movie-block">
+      <h2>Tenet (Premium Dolby Edition)</h2>
+      <p><strong>Available at:</strong> Hall 2 (1:30 PM), Hall 5 (5:00 PM), Hall 6 (8:30 PM)</p>
+      <label>Adult Tickets (Rs. 1700): <input type="number" min="0" value="0" name="Tenet Dolby_Adult" data-price="1700" /></label>
+      <label>Kids Tickets (Rs. 800): <input type="number" min="0" value="0" name="Tenet Dolby_Kids" data-price="800" /></label>
+    </div>
+
+    <div class="movie-block">
+      <h2>Interstellar (IMAX Experience)</h2>
+      <p><strong>Available at:</strong> Hall 1 (11:00 AM), Hall 3 (2:00 PM), Hall 5 (6:00 PM)</p>
+      <label>Adult Tickets (Rs. 1850): <input type="number" min="0" value="0" name="Interstellar IMAX_Adult" data-price="1850" /></label>
+      <label>Kids Tickets (Rs. 900): <input type="number" min="0" value="0" name="Interstellar IMAX_Kids" data-price="900" /></label>
+    </div>
+
+
+    <!-- ✅ 3D & IMAX Shows -->
+    <h2 class="category">3D & IMAX Shows</h2>
+
+    <div class="movie-block">
+      <h2>Doctor Strange: Multiverse of Madness (3D)</h2>
+      <p><strong>Available at:</strong> Hall 1 (12:30 PM), Hall 3 (4:00 PM), Hall 5 (8:00 PM)</p>
+      <label>Adult Tickets (Rs. 1650): <input type="number" min="0" value="0" name="Doctor Strange 3D_Adult" data-price="1650" /></label>
+      <label>Kids Tickets (Rs. 800): <input type="number" min="0" value="0" name="Doctor Strange 3D_Kids" data-price="800" /></label>
+    </div>
+
+    <div class="movie-block">
+      <h2>Ant-Man and the Wasp: Quantumania (3D)</h2>
+      <p><strong>Available at:</strong> Hall 2 (1:00 PM), Hall 4 (4:30 PM), Hall 6 (7:00 PM)</p>
+      <label>Adult Tickets (Rs. 1550): <input type="number" min="0" value="0" name="Ant-Man 3D_Adult" data-price="1550" /></label>
+      <label>Kids Tickets (Rs. 750): <input type="number" min="0" value="0" name="Ant-Man 3D_Kids" data-price="750" /></label>
+    </div>
+
+    <div class="movie-block">
+      <h2>Jurassic World: Dominion (3D)</h2>
+      <p><strong>Available at:</strong> Hall 3 (11:30 AM), Hall 5 (2:30 PM), Hall 6 (6:00 PM)</p>
+      <label>Adult Tickets (Rs. 1500): <input type="number" min="0" value="0" name="Jurassic World 3D_Adult" data-price="1500" /></label>
+      <label>Kids Tickets (Rs. 700): <input type="number" min="0" value="0" name="Jurassic World 3D_Kids" data-price="700" /></label>
+    </div>
+
+
+    <div class="movie-block">
+      <h2>Black Panther: Wakanda Forever (IMAX)</h2>
+      <p><strong>Available at:</strong> Hall 2 (12:00 PM), Hall 3 (3:00 PM), Hall 6 (6:00 PM)</p>
+      <label>Adult Tickets (Rs. 1600): <input type="number" min="0" value="0" name="Wakanda IMAX_Adult" data-price="1600" /></label>
+      <label>Kids Tickets (Rs. 800): <input type="number" min="0" value="0" name="Wakanda IMAX_Kids" data-price="800" /></label>
+    </div>
+
+
+
+    <!-- ✅ Special Discount Offers -->
+    <h2 class="category">Special Discount Offers</h2>
+
+    <div class="movie-block">
+      <h2>Classic Cinema Night</h2>
+      <p><strong>Available at:</strong> Hall 2 (7:00 PM), Hall 5 (9:00 PM)</p>
+      <label>General Tickets (Rs. 200): <input type="number" min="0" value="0" name="Classic Cinema Night" data-price="200" /></label>
+    </div>
+
+    <div class="movie-block">
+      <h2>Family Friday</h2>
+      <p><strong>Available at:</strong> Hall 3 (6:00 PM), Hall 4 (8:00 PM)</p>
+      <label>Group Tickets (Rs. 1800): <input type="number" min="0" value="0" name="Family Friday" data-price="1800" /></label>
+    </div>
+
+    <div class="movie-block">
+      <h2>Student Wednesdays</h2>
+      <p><strong>Available at:</strong> Hall 1 (2:00 PM), Hall 6 (4:30 PM)</p>
+      <label>Student Tickets (Rs. 500): <input type="number" min="0" value="0" name="Student Wednesday" data-price="500" /></label>
+    </div>
+
+
+
+    <!-- ✅ Action Buttons -->
+    <div class="btn-row">
+      <button type="button" onclick="updateSummary()">Update Summary</button>
+      <button type="button" onclick="saveFavourite()">Save as Favourite</button>
+      <button type="button" onclick="applyFavourite()">Apply Favourite</button>
+      <button type="button" onclick="proceedToCheckout()">Proceed to Checkout</button>
+    </div>
+    </form>
+
+    <!-- ✅ Ticket Summary Table -->
+    <h2 class="sum">Summary</h2>
+    <table id="summaryTable" border="1">
+      <thead>
+        <tr>
+          <th>Movie</th>
+          <th>Qty</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Total</td>
+          <td id="totalCost">Rs. 0</td>
+        </tr>
+      </tfoot>
+    </table>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Galaxy Cinema</p>
+  </footer>
+
+  <script src="js/booking.js"></script>
+</body>
+</html>
+
+
+

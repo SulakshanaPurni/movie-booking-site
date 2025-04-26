@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout - Galaxy Cinema</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/checkout.css" />
+
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="booking.html">Back to Booking</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Checkout</h1><br>
+    <h2>Your Tickets</h2>
+    <table border="1">
+      <thead>
+        <tr><th>Movie</th><th>Qty</th><th>Price</th></tr>
+      </thead>
+      <tbody id="cartDetails"></tbody>
+      <tfoot>
+        <tr><td colspan="2">Total</td><td id="cartTotal">$0</td></tr>
+      </tfoot>
+    </table>
+
+    <h2>Enter Your Details</h2>
+    <form id="paymentForm" onsubmit="handlePayment(event)">
+      <label>Full Name:
+        <input type="text" id="fullName" required />
+      </label>
+      <label>Email:
+        <input type="email" id="email" required />
+      </label>
+      <label>Preferred Seat(s):
+        <input type="text" id="seats" placeholder="e.g. A12, A13" required />
+      </label>
+      <label>Payment Info:
+        <input type="text" id="payment" placeholder="Card **** ****" required />
+      </label>
+      <button type="submit">Pay</button>
+    </form>
+    
+    <div id="confirmation" style="display:none; margin-top:2rem;"></div>
+    
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Galaxy Cinema</p>
+  </footer>
+
+  <script>
+  document.getElementById('cartDetails').innerHTML = localStorage.getItem('cart') || '';
+  document.getElementById('cartTotal').innerText = localStorage.getItem('total') || 'Rs. 0';
+
+  function handlePayment(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("fullName").value;
+    const seats = document.getElementById("seats").value;
+    const ref = "TKT" + Math.floor(100000 + Math.random() * 900000);
+    const time = new Date().toLocaleString();
+
+    const message = `
+      <h3>Thank you, ${name}!</h3>
+      <p>Your booking has been confirmed.</p>
+      <p><strong>Booking Reference:</strong> ${ref}</p>
+      <p><strong>Seat(s):</strong> ${seats}</p>
+      <p><strong>Time of Booking:</strong> ${time}</p>
+      <p>We've sent your ticket to your email. Enjoy your movie!</p>
+    `;
+
+    document.getElementById("paymentForm").style.display = "none";
+    document.getElementById("confirmation").innerHTML = message;
+    document.getElementById("confirmation").style.display = "block";
+  }
+</script>
+
+</body>
+</html>
